@@ -1,0 +1,144 @@
+Processed 3 file(s)
+
+======================================================================
+FILE: TC1
+======================================================================
+Word                           Frequency 
+----------------------------------------------------------------------
+achievement                    1         
+adequate                       1         
+adventures                     1         
+anal                           1         
+andrews                        1         
+assessed                       1         
+bedding                        1         
+blues                          1         
+buying                         1         
+cartridge                      1         
+cgi                            1         
+championship                   1         
+clear                          1         
+club                           1         
+coastal                        1         
+collect                        1         
+comm                           1         
+confirm                        1         
+conservative                   2         
+consistent                     1         
+... and 79 more words
+----------------------------------------------------------------------
+Total distinct words: 99
+Total word count: 100
+
+======================================================================
+FILE: TC2
+======================================================================
+Word                           Frequency 
+----------------------------------------------------------------------
+advantages                     1         
+afternoon                      1         
+algebra                        1         
+amongst                        4         
+amounts                        1         
+anchor                         1         
+answering                      1         
+apache                         1         
+atomic                         1         
+attending                      1         
+automation                     1         
+bases                          1         
+biz                            1         
+blowjob                        1         
+boots                          1         
+brass                          4         
+builders                       1         
+cannon                         1         
+catalog                        1         
+chain                          4         
+... and 124 more words
+----------------------------------------------------------------------
+Total distinct words: 144
+Total word count: 184
+
+======================================================================
+FILE: TC3
+======================================================================
+Word                           Frequency 
+----------------------------------------------------------------------
+acquisition                    1         
+advances                       1         
+affects                        1         
+aids                           1         
+allergy                        1         
+ambient                        1         
+an                             1         
+analyzed                       1         
+antiques                       1         
+apple                          1         
+archive                        1         
+archived                       1         
+argued                         1         
+aruba                          1         
+aside                          1         
+assembled                      1         
+aw                             1         
+ban                            1         
+bangbus                        1         
+basin                          1         
+... and 467 more words
+----------------------------------------------------------------------
+Total distinct words: 487
+Total word count: 500
+
+
+================================================================================
+WORD COUNT SUMMARY - ALL FILES
+================================================================================
+File                           Distinct Words       Total Words     Status         
+--------------------------------------------------------------------------------
+TC1                            99                   100             OK             
+TC2                            144                  184             OK             
+TC3                            487                  500             OK             
+================================================================================
+Total distinct words across all files: 715
+Total words across all files: 784
+
+
+================================================================================
+CONSOLIDATED WORD FREQUENCIES (Top 30 words)
+================================================================================
+Word                           Total Frequency      Avg per File        
+--------------------------------------------------------------------------------
+doc                            5                    1.67                
+lease                          4                    1.33                
+brass                          4                    1.33                
+revenues                       4                    1.33                
+targeted                       4                    1.33                
+inflation                      4                    1.33                
+chain                          4                    1.33                
+holders                        4                    1.33                
+amongst                        4                    1.33                
+monaco                         4                    1.33                
+filme                          4                    1.33                
+kingston                       4                    1.33                
+blues                          3                    1.00                
+wood                           3                    1.00                
+pre                            3                    1.00                
+notice                         3                    1.00                
+firms                          2                    0.67                
+vagina                         2                    0.67                
+explorer                       2                    0.67                
+matters                        2                    0.67                
+conservative                   2                    0.67                
+permission                     2                    0.67                
+tea                            2                    0.67                
+significance                   2                    0.67                
+kuwait                         2                    0.67                
+ht                             2                    0.67                
+resort                         2                    0.67                
+sorry                          2                    0.67                
+j                              2                    0.67                
+initiative                     2                    0.67                
+
+... and 685 more words
+================================================================================
