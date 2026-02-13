@@ -1,4 +1,5 @@
 """Compute sales totals from a product catalogue and sales records."""
+# pylint: disable=invalid-name
 
 import json
 import sys
@@ -115,7 +116,7 @@ def main():
     with open("SalesResults.txt", "w", encoding="utf-8") as file:
         file.write(output + "\n")
 
-    print(f"\nResults saved to SalesResults.txt")
+    print("\nResults saved to SalesResults.txt")
 
 
 if __name__ == "__main__":
