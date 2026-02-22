@@ -18,7 +18,9 @@ class Hotel(EntityManager, PersistenceManager):
         rooms = kwargs.get('rooms')
 
         if not all([hotel_id, name, location, rooms]):
-            raise ValueError("Todos los campos son requeridos: hotel_id, name, location, rooms")
+            raise ValueError(
+                "Campos requeridos: hotel_id, name, location, rooms"
+            )
 
         if not isinstance(rooms, int) or rooms <= 0:
             raise ValueError("rooms debe ser un entero positivo")
@@ -78,7 +80,10 @@ class Hotel(EntityManager, PersistenceManager):
                     if not isinstance(new_rooms, int) or new_rooms <= 0:
                         raise ValueError("rooms debe ser un entero positivo")
                     if new_rooms < hotels[i]['reserved_rooms']:
-                        raise ValueError("No se puede reducir rooms por debajo de las reservadas")
+                        raise ValueError(
+                            "No se puede reducir rooms "
+                            "por debajo de las reservadas"
+                        )
                     hotels[i]['rooms'] = new_rooms
                 self.save_data(hotels)
                 return hotels[i]

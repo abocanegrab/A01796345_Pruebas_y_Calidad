@@ -17,7 +17,9 @@ class Customer(EntityManager, PersistenceManager):
         email = kwargs.get('email')
 
         if not all([customer_id, name, email]):
-            raise ValueError("Todos los campos son requeridos: customer_id, name, email")
+            raise ValueError(
+                "Campos requeridos: customer_id, name, email"
+            )
 
         customers = self.load_data()
         for c in customers:
