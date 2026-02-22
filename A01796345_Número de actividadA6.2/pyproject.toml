@@ -8,6 +8,7 @@ dependencies = []
 [project.optional-dependencies]
 dev = [
     "coverage",
+    "pylint",
 ]
 
 [tool.coverage.run]
