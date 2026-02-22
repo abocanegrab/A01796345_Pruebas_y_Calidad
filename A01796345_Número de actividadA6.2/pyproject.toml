@@ -5,6 +5,11 @@ description = "Sistema de reservaciones - Actividad 6.2"
 requires-python = ">=3.13"
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "coverage",
+]
+
 [tool.coverage.run]
 source = ["."]
 omit = ["test_*.py"]
