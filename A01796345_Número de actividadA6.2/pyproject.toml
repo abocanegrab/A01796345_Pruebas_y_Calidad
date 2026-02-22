@@ -12,6 +12,9 @@ dev = [
     "flake8",
 ]
 
+[tool.pylint.main]
+ignore = [".venv", "venv", "__pycache__"]
+
 [tool.coverage.run]
 source = ["."]
 omit = ["test_*.py"]
