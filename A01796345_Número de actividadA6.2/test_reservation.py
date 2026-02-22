@@ -142,7 +142,7 @@ class TestReservation(unittest.TestCase):
     def test_load_corrupted_file(self):
         """Test cargar archivo JSON corrupto."""
         os.makedirs('data', exist_ok=True)
-        with open(self.reservation.DATA_FILE, 'w') as f:
+        with open(self.reservation.DATA_FILE, 'w', encoding='utf-8') as f:
             f.write('not valid json')
         with self.assertRaises(json.JSONDecodeError):
             self.reservation.load_data()

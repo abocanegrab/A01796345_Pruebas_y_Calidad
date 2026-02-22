@@ -5,7 +5,7 @@ import unittest
 from hotel import Hotel
 
 
-class TestHotel(unittest.TestCase):
+class TestHotel(unittest.TestCase):  # pylint: disable=too-many-public-methods
     """Pruebas unitarias para Hotel."""
 
     def setUp(self):
@@ -212,7 +212,7 @@ class TestHotel(unittest.TestCase):
     def test_load_corrupted_file(self):
         """Test cargar archivo JSON corrupto."""
         os.makedirs('data', exist_ok=True)
-        with open(self.test_file, 'w') as f:
+        with open(self.test_file, 'w', encoding='utf-8') as f:
             f.write('not valid json{{{')
         with self.assertRaises(json.JSONDecodeError):
             self.hotel.load_data()

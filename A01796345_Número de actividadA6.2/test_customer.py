@@ -121,7 +121,7 @@ class TestCustomer(unittest.TestCase):
     def test_load_corrupted_file(self):
         """Test cargar archivo JSON corrupto."""
         os.makedirs('data', exist_ok=True)
-        with open(self.test_file, 'w') as f:
+        with open(self.test_file, 'w', encoding='utf-8') as f:
             f.write('corrupted data!!!')
         with self.assertRaises(json.JSONDecodeError):
             self.customer.load_data()
