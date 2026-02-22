@@ -9,6 +9,7 @@ dependencies = []
 dev = [
     "coverage",
     "pylint",
+    "flake8",
 ]
 
 [tool.coverage.run]
