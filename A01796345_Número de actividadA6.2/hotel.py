@@ -1,5 +1,4 @@
 """Modulo de la clase Hotel."""
-import json
 from base_classes import EntityManager, PersistenceManager
 
 
@@ -87,6 +86,7 @@ class Hotel(EntityManager, PersistenceManager):
         raise ValueError(f"Hotel con id {entity_id} no encontrado")
 
     def reserve_room(self, hotel_id):
+        """Reserva una habitacion en el hotel."""
         hotels = self.load_data()
 
         for i, h in enumerate(hotels):
@@ -100,6 +100,7 @@ class Hotel(EntityManager, PersistenceManager):
         raise ValueError(f"Hotel con id {hotel_id} no encontrado")
 
     def cancel_reservation(self, hotel_id):
+        """Cancela una reservacion en el hotel."""
         hotels = self.load_data()
 
         for i, h in enumerate(hotels):

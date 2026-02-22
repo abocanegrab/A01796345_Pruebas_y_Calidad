@@ -61,7 +61,7 @@ class Customer(EntityManager, PersistenceManager):
         """Modifica un cliente existente."""
         customers = self.load_data()
 
-        for i,c in enumerate(customers):
+        for i, c in enumerate(customers):
             if c['customer_id'] == entity_id:
                 if 'name' in kwargs:
                     customers[i]['name'] = kwargs['name']

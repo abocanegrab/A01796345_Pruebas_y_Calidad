@@ -9,36 +9,40 @@ class PersistenceManager(ABC):
 
     @abstractmethod
     def _get_filepath(self):
-        pass
+        """Retorna la ruta del archivo de persistencia."""
 
     def load_data(self):
+        """Carga datos desde el archivo JSON."""
         filepath = self._get_filepath()
         if not os.path.exists(filepath):
             return []
-        with open(filepath, 'r', encoding='utf-8') as f:
-            d = json.load(f)
-            return d
+        with open(filepath, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            return data
 
     def save_data(self, data):
+        """Guarda datos en el archivo JSON."""
         filepath = self._get_filepath()
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
-        with open(filepath,'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+        with open(filepath, 'w', encoding='utf-8') as file:
+            json.dump(data, file, indent=2, ensure_ascii=False)
 
 
 class EntityManager(ABC):
+    """Abstraccion para operaciones CRUD de entidades."""
+
     @abstractmethod
     def create(self, **kwargs):
-        pass
+        """Crea una nueva entidad."""
 
     @abstractmethod
     def delete(self, entity_id):
-        pass
+        """Elimina una entidad por su id."""
 
     @abstractmethod
     def display(self, entity_id=None):
-        pass
+        """Muestra informacion de entidades."""
 
     @abstractmethod
     def modify(self, entity_id, **kwargs):
-        pass
+        """Modifica una entidad existente."""
